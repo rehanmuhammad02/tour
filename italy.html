@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOURISTS SPECIAL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="italy.css">
+  <link rel="icon" href="logo.jpeg">
+</head>
+<body>
+  <!-- //nav bar -->
+  <nav class="navbar">
+  <div class="logo"><img src="logo.jpeg" alt="logo" id="logo"></div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <ul id="nav-menu">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="aboutus.html">ABOUT US</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li>
+      <a href="#">CATEGORY ▼</a>
+      <div class="dropdown-content">
+        <a href="italy.html" class="drop">Italy</a>
+        <a href="spain.html" class="drop">Spain</a>
+        <a href="france.html" class="drop">France</a>
+        <a href="japan.html" class="drop">Japan</a>
+        <a href="usa.html" class="drop">USA</a>
+        <a href="thailand.html" class="drop">Thailand</a>
+        <a href="australia.html" class="drop">Australia</a>
+        <a href="grrece.html" class="drop">Greece</a>
+        <a href="uk.html" class="drop">UK</a>
+        <a href="turkey.html" class="drop">Turkey</a>
+        <a href="newzealand.html" class="drop">New Zealand</a>
+        <a href="switzerland.html" class="drop">Switzerland</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+  </script>
+  <div style="height: 2000px; background: #f0f0f0; padding: 20px;">
+  </div>
+  <!-- banner -->
+  <div class="tour-banner">
+    <div class="banner-content">
+      <br><br><br><br>
+      <h1>Explore More Worry Less</h1>
+      <p>Explore the world with guided tours and unforgettable moments</p>
+      <a href="index.html" class="btn btn-light btn-sm mt-3" id="bt">Explore Tours</a>
+    </div>
+  </div>
+  <h1 class="italy">ITALY</h1>
+  <!-- cards -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="Rome.jpg" class="card-img-top" alt="..." id="photo">
+          <div class="card-body">
+            <h5 class="card-title">Rome</h5>
+            <p class="card-text">The Eternal City – Italy’s capital is a breathtaking blend of ancient ruins, 
+            Renaissance art, and lively street life. Home to the Colosseum, Vatican City, and Trevi Fountain.</p>
+            <a href="contact.html" class="btn btn-dark" id="btn">VISIT NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="Venice.jpg" class="card-img-top" alt="..." id="photo">
+          <div class="card-body">
+            <h5 class="card-title">Venice</h5>
+            <p class="card-text">The Floating City – Famous for its canals, gondolas, and romantic atmosphere. 
+            Must-see landmarks include St. Mark’s Basilica, Doge’s Palace, and the Grand Canal.</p>
+            <a href="contact.html" class="btn btn-dark" id="btn">VISIT NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="Florence.jpg" class="card-img-top" alt="..." id="photo">
+          <div class="card-body">
+            <h5 class="card-title">Florence</h5>
+            <p class="card-text">The Cradle of the Renaissance – A cultural gem filled with art, architecture,
+            and history. Visit the Uffizi Gallery, Duomo, and Michelangelo’s David.</p>
+            <a href="contact.html" class="btn btn-dark" id="btn">VISIT NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="Milan.jpg" class="card-img-top" alt="..." id="photo">
+          <div class="card-body">
+            <h5 class="card-title">Milan</h5>
+            <p class="card-text">Italy’s Fashion & Design Capital – A modern metropolis known for high-end 
+            shopping, the Duomo di Milano, and Leonardo da Vinci’s The Last Supper.</p>
+            <a href="contact.html" class="btn btn-dark" id="btn">VISIT NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="Naples.jpg" class="card-img-top" alt="..." id="photo">
+          <div class="card-body">
+            <h5 class="card-title">Naples</h5>
+            <p class="card-text">Gateway to Southern Italy – Known for its vibrant street life, historic center,
+            and proximity to Pompeii, Mount Vesuvius, and the Amalfi Coast.</p>
+            <a href="contact.html" class="btn btn-dark" id="btn">VISIT NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="Pisa.jpg" class="card-img-top" alt="..." id="photo">
+          <div class="card-body">
+            <h5 class="card-title">Pisa</h5>
+            <p class="card-text">The City of the Leaning Tower – A charming city most famous for its iconic 
+            Leaning Tower, but also rich in medieval and Renaissance architecture.</p>
+            <a href="contact.html" class="btn btn-dark" id="btn">VISIT NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="Verona.jpg" class="card-img-top" alt="..." id="photo">
+          <div class="card-body">
+            <h5 class="card-title">Verona</h5>
+            <p class="card-text">City of Romeo and Juliet – A romantic destination with Roman arenas, charming
+             streets, and Shakespearean legends.</p>
+            <a href="contact.html" class="btn btn-dark" id="btn">VISIT NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="Turin.jpg" class="card-img-top" alt="..." id="photo">
+          <div class="card-body">
+            <h5 class="card-title">Turin</h5>
+            <p class="card-text">Elegant and Refined – A historic city in northern Italy with Baroque architecture,
+             the Mole Antonelliana, and rich chocolate and coffee culture.</p>
+            <a href="contact.html" class="btn btn-dark" id="btn">VISIT NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="Bologna.jpg" class="card-img-top" alt="..." id="photo">
+          <div class="card-body">
+            <h5 class="card-title">Bologna</h5>
+            <p class="card-text">Bologna offers a rich tapestry of experiences for travelers, from its historic
+             architecture and vibrant culture to its renowned culinary scene.</p>
+            <a href="contact.html" class="btn btn-dark" id="btn">VISIT NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card">
+          <img src="Palermo.jpg" class="card-img-top" alt="..." id="photo">
+          <div class="card-body">
+            <h5 class="card-title">Palermo</h5>
+            <p class="card-text">Cultural Crossroads of Sicily – A melting pot of Arab, Norman, and Italian 
+            influences with vibrant markets, street food, and historic cathedrals.</p>
+            <a href="contact.html" class="btn btn-dark" id="btn">VISIT NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-section footer-logo">
+          <h2>✈️ TravelWorld</h2>
+          <p>Your trusted travel companion to explore the globe.</p>
+        </div>
+  
+        <div class="footer-section footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html" target="_blank">🏠 Home</a></li>
+            <li><a href="aboutus.html" target="_blank">ℹ️ About Us</a></li>
+            <li><a href="contact.html" target="_blank">📞 Contact</a></li>
+            <li><a href="home.html" target="_blank">🌍 Tour</a></li>
+          </ul>
+        </div>
+  
+        <div class="footer-section footer-social">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#" target="_blank">🌐 Facebook</a></li>
+            <li><a href="#" target="_blank">📸 Instagram</a></li>
+            <li><a href="#" target="_blank">🐦 Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="footer-bottom">&copy; 2025 TravelWorld. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
