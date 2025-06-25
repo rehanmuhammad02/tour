@@ -1,0 +1,272 @@
+/* navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 60px; /* To prevent content from hiding under navbar */
+  }
+  .navbar {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  }
+  #logo{
+    height: 50px;
+  }
+  .navbar .logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar li {
+    position: relative;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+  .navbar li:hover > a {
+    background-color:red;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    z-index: 1001;
+  }
+  .dropdown-content a {
+    padding: 10px 15px;
+  }
+  .navbar li:hover .dropdown-content {
+    display: block;
+  }
+  .drop{
+    text-transform: uppercase;
+  }
+  .drop:hover{
+    color: white;
+    background-color: red;
+  }
+  /* Mobile responsiveness */
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .navbar ul {
+      display: none;
+      flex-direction: column;
+      background-color: #000;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+    }
+    .navbar ul.active {
+      display: flex;
+    }
+    .navbar li {
+      width: 100%;
+    }
+    .dropdown-content {
+      position: static;
+    }
+    .menu-toggle {
+      display: block;
+    }
+  }
+  /* banner */
+  .tour-banner {
+    background: url('france.avif') no-repeat center center;
+    background-size: cover;
+    height:600px;
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2020px;
+  }
+  .tour-banner::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+  .banner-content h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: black;
+    opacity: 0.75;
+  }
+  .banner-content p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  @media (max-width: 768px) {
+    .tour-banner {
+      height: 40vh;
+    }
+    .banner-content h1 {
+      font-size: 1.6rem;
+
+    }
+    .banner-content p {
+      font-size: 1rem;
+    }
+  }
+  #bt{
+    background-color:transparent;
+    color:white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    font-weight:bolder;
+    font-size: 15px;
+  }
+  #bt:hover{
+      background-color:white;
+      color:red;
+  }
+  /* cards */
+  .italy{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    opacity: 0.50;
+    margin-top: 10px;
+  }
+  .card-title{
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  .btn-btn-dark{
+    text-align: center;
+  }
+  #btn{
+    background-color: white;
+    color: black;
+    font-weight: 300;
+    border: 2px solid black;
+  }
+  #btn:hover{
+    background-color: black;
+    color:white;
+  }
+  .card-text{
+    font-weight:bold;
+    text-align: justify;
+  }
+  #photo{
+    height: 300px;
+  }
+  /* footer */
+  .footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 0.95em;
+  }
+  .footer-container {
+    max-width: 1100px;
+    margin: auto;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .footer-section {
+    flex: 1 1 250px;
+  }
+  .footer-logo h2 {
+    margin-bottom: 10px;
+    font-size: 1.6em;
+  }
+  .footer-logo p {
+    color: #ccc;
+    font-size: 15px;
+    text-transform: lowercase;
+  }
+  .footer-nav h4,
+  .footer-social h4 {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  .footer-nav ul,
+  .footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-nav ul li,
+  .footer-social ul li {
+    margin-bottom: 8px;
+  }
+  .footer-nav a,
+  .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .footer-nav a:hover,
+  .footer-social a:hover {
+    color: #4CAF50;
+  }
+  .footer-bottom {
+    text-align: center;
+    color: #aaa;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  hr {
+    border-color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  /* ✅ Responsive Footer */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .footer-section {
+      margin-bottom: 20px;
+    }
+  }
+  
+  
